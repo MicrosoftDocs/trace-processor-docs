@@ -1,1 +1,0 @@
-# Welcome to trace-processor!

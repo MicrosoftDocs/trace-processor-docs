@@ -1,2 +1,4 @@
-- name: Index
-  href: index.md
+- name: .NET TraceProcessing
+  href: index.yml
+- name: Getting Started
+  href: quickstart.md
