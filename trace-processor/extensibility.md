@@ -64,4 +64,6 @@ class CustomDataSource : IFilteredEventConsumer
 
 ## Next Steps
 
-[Process your first trace](quickstart.md) with TraceProcessor.
+In this overview, you learned how to extend TraceProcessor.
+
+The next step is to examine other built-in data available from TraceProcessor. Look at the [samples](https://github.com/microsoft/eventtracing-processing-samples) for some ideas. See the extension methods on [ITraceSource](xref:Microsoft.Windows.EventTracing.ITraceSource) for a list of supported trace data, or examine the method available from "trace." shown by IntelliSense. Note that not all traces include all supported types of data.

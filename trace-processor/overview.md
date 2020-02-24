@@ -22,4 +22,6 @@ Inside Microsoft, we heavily use ETW traces to measure the performance of new bu
 
 ## Next Steps
 
-Learn how to [extend](extensibility.md) TraceProcessor to access custom trace data.
+In this overview, you learned what .NET TraceProcessing is.
+
+The next step is to [process your first trace](quickstart.md).

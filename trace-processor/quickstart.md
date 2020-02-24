@@ -133,8 +133,8 @@ To process a trace, call [TraceProcessor.Create](xref:Microsoft.Windows.EventTra
 
 Telling the processor what kinds of data you want up front means you do not need to spend time processing large volumes of all possible kinds of trace data. Instead, [TraceProcessor](xref:Microsoft.Windows.EventTracing.TraceProcessor) just does the work needed to provide the specific kinds of data you request.
 
-## Next steps
+## Next Steps
 
 In this quickstart, you accessed process command lines from an ETW trace. Now, you have an application that can access data from traces.
 
-The next step is to examine other data available from the trace and determine what you want to do with that data. Look at the [samples](https://github.com/microsoft/eventtracing-processing-samples) for some ideas. See the extension methods on [ITraceSource](xref:Microsoft.Windows.EventTracing.ITraceSource) for a list of supported trace data, or examine the method available from "trace." shown by IntelliSense. Note that not all traces include all supported types of data.
+The next step is to learn how to [extend](extensibility.md) TraceProcessor to access custom trace data.
