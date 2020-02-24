@@ -6,8 +6,10 @@
       href: overview.md
     - name: Extensibility
       href: extensibility.md
-- name: Getting Started
-  href: quickstart.md
+- name: Quickstarts
+  items:
+    - name: Process your first trace
+      href: quickstart.md
 - name: Samples
   href: https://github.com/microsoft/eventtracing-processing-samples  
 - name: Reference
