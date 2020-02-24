@@ -133,6 +133,20 @@ To process a trace, call [TraceProcessor.Create](xref:Microsoft.Windows.EventTra
 
 Telling the processor what kinds of data you want up front means you do not need to spend time processing large volumes of all possible kinds of trace data. Instead, [TraceProcessor](xref:Microsoft.Windows.EventTracing.TraceProcessor) just does the work needed to provide the specific kinds of data you request.
 
+## Recommended project settings
+
+There are a couple of project settings we recommend using with TraceProcessor:
+
+1. We recommend running exes as 64-bit.
+
+    The Visual Studio default for a new C# .NET Framework console application is Any CPU with Prefer 32-bit checked. The default for .NET Core may already have the recommended setting.
+
+    Trace processing can be memory-intensive, especially with larger traces, and we recommend changing Platform target to x64 (or unchecking Prefer 32-bit) in exes that use TraceProcessor. To change these settings, see the Build tab under Properties for the project. To change these settings for all configurations, ensure that the Configuration dropdown is set to All Configurations, rather than the default of the current configuration only.
+
+2. We suggest using NuGet with the newer-style PackageReference mode rather than the older packages.config mode.
+
+    To change the default for new projects, see Tools, NuGet Package Manager, Package Manager Settings, Package Management, Default package management format.
+
 ## Next Steps
 
 In this quickstart, you accessed process command lines from an ETW trace. Now, you have an application that can access data from traces.

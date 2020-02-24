@@ -4,7 +4,7 @@
   items:
     - name: What is .NET TraceProcessing?
       href: overview.md
-    - name: Data sources
+    - name: Trace data sources
       href: data-sources.md
     - name: Extensibility
       href: extensibility.md

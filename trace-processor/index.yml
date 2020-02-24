@@ -20,7 +20,7 @@ landingContent:
         links: 
           - text: What is .NET TraceProcessing?
             url: overview.md
-          - text: Data sources
+          - text: Trace data sources
             url: data-sources.md
           - text: Extensibility
             url: extensibility.md
