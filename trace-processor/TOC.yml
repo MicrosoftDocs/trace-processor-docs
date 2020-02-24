@@ -1,5 +1,7 @@
 - name: .NET TraceProcessing Documentation
   href: index.yml
+- name: Overview
+  href: overview.md
 - name: Getting Started
   href: quickstart.md
 - name: Reference
