@@ -1,6 +1,6 @@
 ---
 title: Extensibility - .NET TraceProcessing
-description: In this overview, learn how to extend .NET TraceProcessing.
+description: In this tutorial, learn how to extend .NET TraceProcessing.
 author: davidmatson
 manager: maiak
 ms.author: davidmatson
@@ -10,9 +10,7 @@ ms.prod: traceprocessor
 
 ---
 
-# TraceProcessor Extensibility
-
-## Extend TraceProcessor
+# Extending TraceProcessor
 
 Many kinds of trace data have built-in support in [TraceProcessor](xref:Microsoft.Windows.EventTracing.TraceProcessor), but if you have your other providers that you would like to analyze (including your own custom providers), that data is also available from the trace live while processing occurs.
 
@@ -64,6 +62,6 @@ class CustomDataSource : IFilteredEventConsumer
 
 ## Next Steps
 
-In this overview, you learned how to extend TraceProcessor.
+In this tutorial, you learned how to extend TraceProcessor.
 
-The next step is to examine other built-in data available from TraceProcessor. Look at the [samples](https://github.com/microsoft/eventtracing-processing-samples) for some ideas. See the extension methods on [ITraceSource](xref:Microsoft.Windows.EventTracing.ITraceSource) for a list of supported trace data, or examine the method available from "trace." shown by IntelliSense. Note that not all traces include all supported types of data.
+The next step is to learn how to [load symbols](symbols.md) for traces.

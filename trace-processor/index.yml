@@ -15,30 +15,36 @@ metadata:
 
 landingContent:
   - title: About .NET TraceProcessing
-    linkLists: 
+    linkLists:
       - linkListType: overview
-        links: 
+        links:
           - text: What is .NET TraceProcessing?
             url: overview.md
-          - text: Trace data sources
-            url: data-sources.md
-          - text: Extensibility
-            url: extensibility.md
   - title: Get started
-    linkLists: 
+    linkLists:
       - linkListType: quickstart
-        links: 
+        links:
           - text: Process your first trace
             url: quickstart.md
+  - title: Develop
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Accessing trace data
+            url: tutorial.md
+          - text: Extending TraceProcessor
+            url: extensibility.md
+          - text: Loading symbols
+            url: symbols.md
   - title: Samples
-    linkLists: 
+    linkLists:
       - linkListType: sample
-        links: 
+        links:
           - text: Find a sample
             url: https://github.com/microsoft/eventtracing-processing-samples
   - title: Reference
-    linkLists: 
+    linkLists:
       - linkListType: reference
-        links: 
+        links:
           - text: API Reference
             url: https://docs.microsoft.com/dotnet/api/?view=trace-processor-dotnet-1.0

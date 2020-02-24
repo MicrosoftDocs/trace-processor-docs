@@ -123,34 +123,10 @@ You can use this package in a console app to list the process command lines cont
 
     This time, you should see a list command lines from all processes that were executing while the trace was being recorded.
 
-## Using TraceProcessor
-
-To process a trace, call [TraceProcessor.Create](xref:Microsoft.Windows.EventTracing.TraceProcessor.Create%2A). The core interface is [ITraceProcessor](xref:Microsoft.Windows.EventTracing.ITraceProcessor), and using this interface involves the following pattern:
-
-1. First, tell the processor what data you want to use from a trace
-2. Second, process the trace; and
-3. Finally, access the results.
-
-Telling the processor what kinds of data you want up front means you do not need to spend time processing large volumes of all possible kinds of trace data. Instead, [TraceProcessor](xref:Microsoft.Windows.EventTracing.TraceProcessor) just does the work needed to provide the specific kinds of data you request.
-
-## Recommended project settings
-
-There are a couple of project settings we recommend using with TraceProcessor:
-
-1. We recommend running exes as 64-bit.
-
-    The Visual Studio default for a new C# .NET Framework console application is Any CPU with Prefer 32-bit checked. The default for .NET Core may already have the recommended setting.
-
-    Trace processing can be memory-intensive, especially with larger traces, and we recommend changing Platform target to x64 (or unchecking Prefer 32-bit) in exes that use TraceProcessor. To change these settings, see the Build tab under Properties for the project. To change these settings for all configurations, ensure that the Configuration dropdown is set to All Configurations, rather than the default of the current configuration only.
-
-2. We suggest using NuGet with the newer-style PackageReference mode rather than the older packages.config mode.
-
-    To change the default for new projects, see Tools, NuGet Package Manager, Package Manager Settings, Package Management, Default package management format.
-
 ## Next Steps
 
-In this quickstart, you accessed process command lines from an ETW trace. Now, you have an application that can access data from traces.
+In this quickstart, you created a console application, installed TraceProcessor, and used it to access process command lines from an ETW trace. Now you have an application that accesses trace data.
 
- Process information is just one of many kinds of data that can be stored in an ETW trace.
+Process information is just one of many kinds of data stored in an ETW trace that your application can access.
 
-The next step is to learn about the other [data sources](data-sources.md) TraceProcessor can access.
+The next step is to [look closer at TraceProcessor](tutorial.md) and the other data sources it can access.

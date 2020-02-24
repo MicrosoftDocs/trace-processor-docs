@@ -4,14 +4,18 @@
   items:
     - name: What is .NET TraceProcessing?
       href: overview.md
-    - name: Trace data sources
-      href: data-sources.md
-    - name: Extensibility
-      href: extensibility.md
 - name: Quickstarts
   items:
     - name: Process your first trace
       href: quickstart.md
+- name: Tutorials
+  items:
+    - name: Accessing trace data
+      href: tutorial.md
+    - name: Extending TraceProcessor
+      href: extensibility.md
+    - name: Loading symbols
+      href: symbols.md
 - name: Samples
   href: https://github.com/microsoft/eventtracing-processing-samples  
 - name: Reference
