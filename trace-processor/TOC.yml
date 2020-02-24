@@ -21,4 +21,4 @@
 - name: Samples
   href: https://github.com/microsoft/eventtracing-processing-samples  
 - name: Reference
-  href: https://docs.microsoft.com/dotnet/api/?view=trace-processor-dotnet-1.0
+  href: reference.md

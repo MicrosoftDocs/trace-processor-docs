@@ -49,4 +49,4 @@ landingContent:
       - linkListType: reference
         links:
           - text: API Reference
-            url: https://docs.microsoft.com/dotnet/api/?view=trace-processor-dotnet-1.0
+            url: reference.md
