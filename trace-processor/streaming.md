@@ -1,5 +1,5 @@
 ---
-title: Streaming - .NET TraceProcessing
+title: Using Streaming - .NET TraceProcessing
 description: In this tutorial, learn how to use streaming to access trace data right away and using less memory.
 author: davidmatson
 manager: maiak
@@ -12,7 +12,7 @@ ms.prod: traceprocessor
 
 # Using Streaming with TraceProcessor
 
-By default, TraceProcessor access data by loading it into memory as the trace is processed. This buffering approach is easy to use, but it can be expensive in terms of memory usage.
+By default, TraceProcessor accesses data by loading it into memory as the trace is processed. This buffering approach is easy to use, but it can be expensive in terms of memory usage.
 
 TraceProcessor also provides trace.UseStreaming(), which supports accessing multiple types of trace data in a streaming manner (processing data as it is read from the trace file, rather than buffering that data in memory). For example, a syscalls trace can be quite large, and buffering the entire list of syscalls in a trace can be quite expensive.
 

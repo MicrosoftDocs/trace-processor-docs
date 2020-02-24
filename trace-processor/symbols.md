@@ -1,5 +1,5 @@
 ---
-title: Symbols - .NET TraceProcessing
+title: Loading Symbols - .NET TraceProcessing
 description: In this tutorial, learn how load symbols when processing traces.
 author: davidmatson
 manager: maiak

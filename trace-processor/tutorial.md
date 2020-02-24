@@ -1,5 +1,5 @@
 ---
-title: Access trace data - .NET TraceProcessing
+title: Accessing trace data - .NET TraceProcessing
 description: In this tutorial, learn how to access trace data using TraceProcessor.
 author: davidmatson
 manager: maiak
