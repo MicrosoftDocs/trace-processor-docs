@@ -1,6 +1,6 @@
 ---
 title: Access trace data - .NET TraceProcessing
-description: In this tutorial, learn to to access trace data using TraceProcessor.
+description: In this tutorial, learn how to access trace data using TraceProcessor.
 author: davidmatson
 manager: maiak
 ms.author: davidmatson
@@ -142,6 +142,8 @@ An .etl file can capture many kinds of data in a trace. Note that which data is 
 | trace.UseWindowsTracePreprocessorEvents() | Provides Windows software trace preprocessor (WPP) events from a trace.                                                    | WPP Trace table; Generic Events table (when Event Type is WPP)       |
 | trace.UseWinINetData()                    | Provides data from a trace about internet activity via Windows Internet (WinINet).                                         | Download Details table                                               |
 | trace.UseWorkingSetData()                 | Provides data from a trace about pages of virtual memory that were in the working set for each process or kernel category. | Virtual Memory Snapshots table                                       |
+
+See also the extension methods on [ITraceSource](xref:Microsoft.Windows.EventTracing.ITraceSource) for all available trace data, or examine the method available from "trace." shown by IntelliSense.
 
 ## Next Steps
 

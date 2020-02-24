@@ -16,6 +16,8 @@
       href: extensibility.md
     - name: Loading symbols
       href: symbols.md
+    - name: Using streaming
+      href: streaming.md
 - name: Samples
   href: https://github.com/microsoft/eventtracing-processing-samples  
 - name: Reference

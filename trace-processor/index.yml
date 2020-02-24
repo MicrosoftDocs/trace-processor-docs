@@ -36,6 +36,8 @@ landingContent:
             url: extensibility.md
           - text: Loading symbols
             url: symbols.md
+          - text: Using streaming
+            url: streaming.md
   - title: Samples
     linkLists:
       - linkListType: sample

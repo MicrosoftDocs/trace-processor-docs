@@ -100,4 +100,4 @@ Internally, TraceProcessor uses the [SymCache](https://docs.microsoft.com/window
 
 In this tutorial, you learned how to load symbols when processing traces.
 
-The next step is to examine other built-in data available from TraceProcessor. Look at the [samples](https://github.com/microsoft/eventtracing-processing-samples) for some ideas. See the extension methods on [ITraceSource](xref:Microsoft.Windows.EventTracing.ITraceSource) for a list of supported trace data, or examine the method available from "trace." shown by IntelliSense. Note that not all traces include all supported types of data.
+The next step is to learn how to [use streaming](streaming.md) to access trace data without buffering everything in memory.
