@@ -1,4 +1,6 @@
-- name: .NET TraceProcessing
+- name: .NET TraceProcessing Documentation
   href: index.yml
 - name: Getting Started
   href: quickstart.md
+- name: Reference
+  href: https://docs.microsoft.com/dotnet/api/?view=trace-processor-dotnet-1.0
