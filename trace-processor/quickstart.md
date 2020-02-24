@@ -137,4 +137,6 @@ Telling the processor what kinds of data you want up front means you do not need
 
 In this quickstart, you accessed process command lines from an ETW trace. Now, you have an application that can access data from traces.
 
-The next step is to learn how to [extend](extensibility.md) TraceProcessor to access custom trace data.
+ Process information is just one of many kinds of data that can be stored in an ETW trace.
+
+The next step is to learn about the other [data sources](data-sources.md) TraceProcessor can access.
