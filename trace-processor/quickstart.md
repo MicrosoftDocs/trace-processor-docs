@@ -26,6 +26,12 @@ Visual Studio 2019
 
 ## Install the TraceProcessing NuGet package
 
+.NET TraceProcessing is available from [NuGet](https://www.nuget.org/packages/Microsoft.Windows.EventTracing.Processing.All) with the following package ID:
+
+Microsoft.Windows.EventTracing.Processing.All
+
+You can use this package in a console app to list the process command lines contained in an ETW trace (.etl file).
+
 1. Create a new .NET Core Console App. In Visual Studio, select File, New, Project..., and choose the Console App (.NET Core) template for C#.
 
     Enter a Project name, for example, TraceProcessorQuickstart, and choose Create.
@@ -117,8 +123,18 @@ Visual Studio 2019
 
     This time, you should see a list command lines from all processes that were executing while the trace was being recorded.
 
+## Using TraceProcessor
+
+To process a trace, call [TraceProcessor.Create](xref:Microsoft.Windows.EventTracing.TraceProcessor.Create%2A). The core interface is [ITraceProcessor](xref:Microsoft.Windows.EventTracing.ITraceProcessor), and using this interface involves the following pattern:
+
+1. First, tell the processor what data you want to use from a trace
+2. Second, process the trace; and
+3. Finally, access the results.
+
+Telling the processor what kinds of data you want up front means you do not need to spend time processing large volumes of all possible kinds of trace data. Instead, [TraceProcessor](xref:Microsoft.Windows.EventTracing.TraceProcessor) just does the work needed to provide the specific kinds of data you request.
+
 ## Next steps
 
 In this quickstart, you accessed process command lines from an ETW trace. Now, you have an application that can access data from traces.
 
-The next step is to examine other data available from the trace and determine what you want to do with that data. See IntelliSense on "trace." for a list of supported trace data. Note that not all traces include all supported types of data.
+The next step is to examine other data available from the trace and determine what you want to do with that data. See the extension methods on [ITraceSource](xref:Microsoft.Windows.EventTracing.ITraceSource) for a list of supported trace data, or examine the method available from "trace." shown by IntelliSense. Note that not all traces include all supported types of data.
