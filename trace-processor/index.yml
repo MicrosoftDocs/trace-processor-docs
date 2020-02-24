@@ -26,6 +26,12 @@ landingContent:
         links: 
           - text: Process your first trace
             url: quickstart.md
+  - title: Samples
+    linkLists: 
+      - linkListType: sample
+        links: 
+          - text: Find a sample
+            url: https://github.com/microsoft/eventtracing-processing-samples
   - title: Reference
     linkLists: 
       - linkListType: reference
