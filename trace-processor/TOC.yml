@@ -1,7 +1,11 @@
 - name: .NET TraceProcessing Documentation
   href: index.yml
 - name: Overview
-  href: overview.md
+  items:
+    - name: What is .NET TraceProcessing?
+      href: overview.md
+    - name: Extensibility
+      href: extensibility.md
 - name: Getting Started
   href: quickstart.md
 - name: Samples

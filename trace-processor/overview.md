@@ -22,4 +22,4 @@ Inside Microsoft, we heavily use ETW traces to measure the performance of new bu
 
 ## Next Steps
 
-[Process your first trace](quickstart.md) with TraceProcessor.
+Learn how to [extend](extensibility.md) TraceProcessor to access custom trace data.
